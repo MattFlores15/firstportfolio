@@ -1,0 +1,244 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  margin: 0;
+  font: 400 17px/1.8 "Lato", sans-serif;
+  color: #777;
+  padding: 0;
+  font: normal 13px arial, helvetica, sans-serif;
+  overflow-x: hidden;
+}
+
+html {
+  background: url(../images/background.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* Make the image to responsive */
+.logo {
+  height: auto;
+}
+
+/* The overlay effect (full height and width) - lays on top of the container and over the image */
+.overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  width: -10%;
+  height: 140%;
+  transform: scale(0);
+  transition: 0.3s ease;
+}
+
+/* When you mouse over the container, the overlay text will "zoom" in display */
+.nav-name:hover .overlay {
+  transform: scale(1);
+  transition-delay: 5s;
+}
+
+.easter-egg {
+  position: absolute;
+  width: 80px;
+  height: auto;
+  transform: translate(-10%, -10%);
+  text-align: center;
+}
+.game {
+  display: none;
+}
+
+.nav-glob {
+  padding: 15px;
+}
+.nav-name {
+  width: 20%;
+  float: left;
+  text-align: center;
+  position: relative;
+}
+
+.sidebar {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+}
+
+/* The sidebar links */
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* The button used to open the sidebar */
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left 0.5s; /* If you want a transition effect */
+  padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {
+    padding-top: 15px;
+  }
+  .sidebar a {
+    font-size: 18px;
+  }
+}
+
+.hea-cab {
+  width: 1024px;
+  margin: 10% auto 5% auto;
+}
+
+.hea-cab h1 {
+  color: #fff;
+  font-size: 40px;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+.hea-cab h2 {
+  color: #fdfdfd;
+  font-size: 22px;
+  text-transform: capitalize;
+  padding-top: 4%;
+  font-weight: 200;
+}
+
+.w-46 {
+  width: 46%;
+}
+.f-left {
+  float: left;
+}
+.pad-15 {
+  padding: 2%;
+}
+.resp {
+  width: 100%;
+}
+
+.empty {
+  clear: both;
+}
+
+.father {
+  padding: 10% 0;
+}
+.div-s {
+  padding: 15% 0;
+  font-size: 25px;
+  line-height: 25px;
+}
+
+.img-week h3 {
+  text-align: center;
+  color: #000;
+  padding-top: 1%;
+  font-size: 18px;
+}
+.img-week a {
+  text-decoration: none;
+}
+.page-wrap {
+  width: 1024px;
+  margin: 50px auto;
+  padding: 20px;
+  background: white;
+  -moz-box-shadow: 0 0 20px black;
+  -webkit-box-shadow: 0 0 20px black;
+  box-shadow: 0 0 20px black;
+}
+p {
+  font-size: 18px;
+  margin: 0 0 30px 0;
+}
+
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+}
+
+button[type="submit"] {
+  background-color: #000;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #000;
+}
+
+footer {
+  width: 1024px;
+  margin: 50px auto;
+  padding: 10px;
+  background: white;
+  -moz-box-shadow: 0 0 20px black;
+  -webkit-box-shadow: 0 0 20px black;
+  box-shadow: 0 0 20px black;
+  text-align: center;
+}
+footer p {
+  display: inline-block;
+  color: #000;
+  margin-left: 2%;
+  margin-top: 2%;
+}
+
+footer a {
+  color: #000;
+}

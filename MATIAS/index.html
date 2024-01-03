@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Matt Flores</title>
+    <link rel="stylesheet" href="css/style.css?v=1dx" />
+    <script src="script.js"></script>
+    <link rel="icon" type="image/png" href="favicon.ico" sizes="64x64" />
+  </head>
+  <body>
+    <header>
+      <nav class="nav-glob">
+        <div class="nav-name">
+          <a class="nav-name-brand" href="#"
+            ><img src="images/brand.png" class="logo"
+          /></a>
+          <div class="overlay">
+            <img
+              src="images/eastereggme.jpg"
+              class="easter-egg"
+              title="photo"
+            />
+          </div>
+        </div>
+        <div class="sidebar" id="mySidebar">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+            >x</a
+          >
+          <a href="index.html#week1">Weeks 1-4</a>
+          <a href="index.html#week5">Weeks 5-8</a>
+          <a href="index.html#contact">Contact</a>
+          <a href="game.html" target="_blank" rel="noreferrer noopener">Game</a>
+        </div>
+        <div id="main">
+          <button class="openbtn" onclick="openNav()">&#9776; Menu</button>
+        </div>
+      </nav>
+    </header>
+
+    <section class="hea-cab">
+      <h1>
+        HI THERE! <br />
+        I'M MATT,<br />
+        WELCOME TO OUR SITE!
+      </h1>
+      <h2>UX/UI DESIGNER & WEB</h2>
+    </section>
+
+    <section class="page-wrap">
+      <p>Hello there!</p>
+
+      <p>
+        I'm Matías Flores, a Experience Design student at Fontys University of
+        Applied Sciences, where I learned all about how to make this lovely site
+        you're visiting and how to work towards the user, in this case you, to
+        keep you happy.
+      </p>
+    </section>
+
+    <section class="page-wrap img-week">
+      <div class="w-46 f-left pad-15" id="week1">
+        <a
+          href="https://docs.google.com/presentation/d/1-ffboTaYTMtzXLeins4pAnd4_dhddaDB/edit?usp=drive_link&ouid=114028528660580667656&rtpof=true&sd=true"
+          ><div>
+            <img src="images/week-1-4.PNG" class="resp" />
+          </div>
+          <h3>WEEK 1-4</h3></a
+        >
+      </div>
+      <div class="w-46 f-left pad-15" id="week5">
+        <a href="UFR.pdf"
+          ><div>
+            <img src="images/week-5-8.PNG" class="resp" />
+          </div>
+          <h3>WEEK 5-8</h3>
+        </a>
+      </div>
+      <div class="empty"></div>
+    </section>
+
+    <section class="page-wrap" id="contact">
+      <div class="w-46 f-left pad-15 father">
+        <h2 class="div-s">Contact me <br />if you want to know more</h2>
+      </div>
+      <div class="w-46 f-left pad-15">
+        <form action="/action_page.php">
+          <label for="fname">First Name</label>
+          <input
+            type="text"
+            id="fname"
+            name="firstname"
+            placeholder="Your name.."
+          />
+
+          <form onsubmit="return false"></form>
+
+          <label for="lname">Last Name</label>
+          <input
+            type="text"
+            id="lname"
+            name="lastname"
+            placeholder="Your last name.."
+          />
+
+          <label for="subject">Subject</label>
+          <textarea
+            id="subject"
+            name="subject"
+            placeholder="Write something.."
+            style="height: 200px"
+          ></textarea>
+
+          <button type="submit" value="Submit" onclick="sendContact();">
+            Submit
+          </button>
+        </form>
+      </div>
+      <div class="empty"></div>
+    </section>
+
+    <footer>
+      <p>© Matias Flores</p>
+      <p><a href="mailto:grouchobunny@gmail.com">grouchobunny@gmail.com</a></p>
+      <div class="empty"></div>
+    </footer>
+  </body>
+</html>
